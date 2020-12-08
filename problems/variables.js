@@ -6,6 +6,10 @@
 //  * Calculate your 2 possible ages for that year based on the stored values.
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
+const birthYear = 1987
+
+
+
 
 // ## Problem Two
 
@@ -105,6 +109,11 @@
 // * The above rule is valid except that every 100 years special rules apply. 
 // * Years that are divisible by 100 are not leap years if they are not also divisible by 400. 
 // * For example 1900 was not a leap year, but 2000 was. Print "Leap year!" or "Not a leap year!" depending on the year you are provided.
+let leapYear = 2100
+let isLeapYear = leapYear % 4 && (leapYear % 100 && leapYear % 400)
+
+console.log((isLeapYear === 0 && "Leap Year!") || isLeapYear !== 0 && "Not a leap year!")
+
 
 
 // ## Problem Ten: Predict the output
